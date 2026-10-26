@@ -1,0 +1,28 @@
+{
+  "loginTests": [
+    {
+      "testName": "Valid login",
+      "username": "Admin",
+      "password": "admin123",
+      "expectedResult": "success"
+    },
+    {
+      "testName": "Invalid username",
+      "username": "InvalidUser",
+      "password": "admin123",
+      "expectedResult": "failure"
+    },
+    {
+      "testName": "Invalid password",
+      "username": "Admin",
+      "password": "wrong123",
+      "expectedResult": "failure"
+    },
+    {
+      "testName": "Empty credentials",
+      "username": "",
+      "password": "",
+      "expectedResult": "validation"
+    }
+  ]
+}
